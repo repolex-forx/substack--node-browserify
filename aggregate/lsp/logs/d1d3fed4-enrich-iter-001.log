@@ -1,0 +1,24 @@
+[2026-04-13T14:27:56Z] === ENRICH ITERATION 1 START | repo=substack/node-browserify sha=d1d3fed4 ===
+[2026-04-13T14:27:56Z] [iter=1] PHASE START: enrich repo=substack/node-browserify sha=d1d3fed4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d1d3fed4-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d1d3fed4fea333f5d7a3b933e7ff12b045112322.nq.gz
+[2026-04-13T14:28:32Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-13T14:28:35Z] [iter=1] AST store loaded triples=293820 load_secs=2 mem_mb=486 MB
+[2026-04-13T14:28:35Z] [iter=1] Step 2: Finding LSP targets mem_mb=486 MB
+[2026-04-13T14:28:35Z] [iter=1] LSP targets found call_sites=3826 imports=0 extends=0 implements=0 secs=0
+[2026-04-13T14:28:35Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=486 MB
+[2026-04-13T14:28:36Z] [iter=1] Position index built positions=20027 nodes_with_types=24086 secs=1 mem_mb=486 MB
+[2026-04-13T14:28:36Z] [iter=1] Step 3: Starting LSP resolution mem_mb=486 MB already_completed_types=[] already_completed_files=0
+[2026-04-13T14:28:36Z] [iter=1] Resolving target type target_type=call_site count=3826
+[2026-04-13T14:28:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=test/ignore.js
+[2026-04-13T14:29:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=3 resolved=15 errors=287 current=example/source_maps/js/foo.js
+[2026-04-13T14:29:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=15 resolved=28 errors=568 current=test/debug_standalone.js
+[2026-04-13T14:30:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=29 resolved=46 errors=882 current=test/multi_entry_cross_require.js
+[2026-04-13T14:30:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=49 resolved=63 errors=1159 current=test/stdin.js
+[2026-04-13T14:31:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.4 files_done=63 resolved=65 errors=1445 current=test/ignore_missing.js
+[2026-04-13T14:31:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.9 files_done=81 resolved=68 errors=1739 current=test/reverse_multi_bundle/lazy.js
+[2026-04-13T14:32:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.4 files_done=101 resolved=77 errors=2018 current=test/browser_field_resolve/h/main.js
+[2026-04-13T14:32:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.9 files_done=132 resolved=85 errors=2305 current=test/json/main.js
+[2026-04-13T14:33:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=251 resolved=137 errors=2571 current=test/circular/a.js
+[2026-04-13T14:33:23Z] [iter=1] Target type resolved target_type=call_site resolved=155 errors=2576 secs=287 mem_mb=486 MB
+[2026-04-13T14:33:27Z] [iter=1] Step 5: Writing final enrichment file triples=28731
+[2026-04-13T14:33:27Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d1d3fed4fea333f5d7a3b933e7ff12b045112322.nq.gz size_kb=516
+[2026-04-13T14:33:27Z] [iter=1] PHASE END: enrich elapsed_s=332 elapsed_min=5.5 total_triples=28731
